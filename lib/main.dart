@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
           child: CarouselSlider(
         items: items,
         options: CarouselOptions(
-          height: size.height * 0.8,
+          aspectRatio: size.aspectRatio * 1.2,
           autoPlay: true,
           enlargeCenterPage: true,
         ),

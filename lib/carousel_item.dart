@@ -22,7 +22,7 @@ class CarouselItem extends StatelessWidget {
       child: Stack(children: [
         Container(
           // alignment: Alignment.center,
-          height: size.height*0.72,
+          height: size.height*0.75,
             margin: EdgeInsets.only(top: 40),
             decoration: BoxDecoration(
               color: const Color(0xffBE2232),
