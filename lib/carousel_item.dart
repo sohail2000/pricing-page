@@ -34,34 +34,38 @@ class CarouselItem extends StatelessWidget {
               alignment: Alignment.center,
               children: [
                 SvgPicture.asset("assets/wasp.svg"),
-                Column(
-                  children:  [
-                    const Text(
-                      "FLEA",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 45),
-                    ),
-                    Column(
-                      children: const[
-                        Text(
-                          "\$9",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontSize: 45),
-                        ),
-                        Text(
-                          "/month",
-                          style: TextStyle(
-                              fontWeight: FontWeight.normal,
-                              color: Colors.white,
-                              fontSize: 18),
-                        ),
-                      ],
-                    ),
-                  ],
+                SizedBox(
+                  height: size.height * .3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text(
+                        "FLEA",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 45),
+                      ),
+                      Column(
+                        children: const [
+                          Text(
+                            "\$9",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 45),
+                          ),
+                          Text(
+                            "/month",
+                            style: TextStyle(
+                                fontWeight: FontWeight.normal,
+                                color: Colors.white,
+                                fontSize: 18),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
